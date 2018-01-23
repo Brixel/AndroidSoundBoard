@@ -22,7 +22,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String WEBSERVER_URL = "http://10.94.213.241:1880/";
+    private static final String WEBSERVER_URL = "http://10.94.213.229:1880/";
 
     private IRestService restService;
 
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                restService.call2(i).enqueue(playSoundCallback);
+                restService.call2(i+1).enqueue(playSoundCallback);
             }
         });
 
