@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sound Board</string>
+    <string name="sound_name">sound name:</string>
+</resources>
